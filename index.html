@@ -154,12 +154,23 @@ a.simple:hover {display:inline;width:120px;font-weight:normal;color:#0000FF;back
     
             
       <font color="grey"> 
-      
-  Random walks on graphs are an essential primitive for many randomised algorithms and stochastic processes. It is natural to ask how much can be gained by running $k$ multiple random walks independently and in parallel. 
-Although the cover time of multiple walks has been investigated for many natural networks, the problem of finding a general characterisation of multiple cover times for \textit{worst-case} start vertices (posed by Alon, Avin, Koucky, Kozma, Lotker, and Tuttle in <a class="simple" href="https://arxiv.org/abs/0705.0467" target="_blank">2008</a>) remains an open problem.
+      	      
+We consider the sequential allocation of $m$ balls (jobs) into $n$ bins (servers) by allowing each ball to choose from some bins sampled uniformly at random. The goal is to maintain a small gap between the maximum load and the average load.
 
-First, we improve and tighten various bounds on the stationary} cover time when $k$ random walks start from vertices sampled from the stationary distribution. For example, we prove an unconditional lower bound of $\Omega( (n/k)  \log n  )$ on the stationary cover time, holding for any graph $G$ and any $1 \leq k =o(n\log n )$. Secondly, we establish the stationary cover times of multiple walks on several fundamental networks up to constant factors. Thirdly, we present a framework characterising worst-case cover times in terms of stationary cover times and a novel, relaxed notion of mixing time for multiple walks called  partial mixing time. Roughly speaking, the partial mixing time only requires a specific portion of all random walks to be mixed. Using these new concepts, we can establish (or recover) the worst-case cover times for many networks including expanders, preferential attachment graphs, grids, binary trees and hypercubes. 
-      <br>
+In this paper, we present a general framework that allows us to analyze  various allocation processes that slightly prefer allocating into underloaded, as opposed to overloaded bins.
+Our analysis covers several natural instances of processes, including: 
+	      
+<ul>
+  <li> The Caching process (a.k.a. memory protocol) as studied by Mitzenmacher, Prabhakar and Shah (2002): At each round we only take one bin sample, but we also have access to a cache in which the most recently used bin is stored. We place the ball into the least loaded of the two.</li>
+ <li> The Packing process: At each round we only take one bin sample. If the load is below some threshold (e.g., the average load), then we place as many balls until the threshold is reached; otherwise, we place only one ball.</li>
+ <li> The Twinning process: At each round, we only take one bin sample. If the load is below some threshold, then we place two balls; otherwise, we place only one ball.</li>
+ <li> The Thinning process as recently studied by Feldheim and Gurel-Gurevich (2021): At each round, we first take one bin sample. If its load is below some threshold, we place one ball; otherwise, we place one ball into a second bin sample.</li>
+</ul>
+
+As we demonstrate, our general framework implies for all these processes a gap of $\mathcal{O}(\log n)$ between the maximum load and average load, even when an arbitrary number of balls $m \geq n$ are allocated (heavily loaded case). Our analysis is inspired by a previous work of Peres, Talwar and Wieder (2010) for the $(1+\beta)$-process, however here we rely on the interplay between different potential functions to prove stabilization.
+	      
+
+       <br>
       </font> </a></small></blockquote>
       </details></p>
 
@@ -194,21 +205,11 @@ The second algorithm is restricted to problem instances with maximum degree thre
     
             
       <font color="grey"> 
-	      
-We consider the sequential allocation of $m$ balls (jobs) into $n$ bins (servers) by allowing each ball to choose from some bins sampled uniformly at random. The goal is to maintain a small gap between the maximum load and the average load.
+	       Random walks on graphs are an essential primitive for many randomised algorithms and stochastic processes. It is natural to ask how much can be gained by running $k$ multiple random walks independently and in parallel. 
+Although the cover time of multiple walks has been investigated for many natural networks, the problem of finding a general characterisation of multiple cover times for worst-case start vertices (posed by Alon, Avin, Koucky, Kozma, Lotker, and Tuttle in <a class="simple" href="https://arxiv.org/abs/0705.0467" target="_blank">2008</a>) remains an open problem.
 
-In this paper, we present a general framework that allows us to analyze  various allocation processes that slightly prefer allocating into underloaded, as opposed to overloaded bins.
-Our analysis covers several natural instances of processes, including: 
-	      
-<ul>
-  <li> The Caching process (a.k.a. memory protocol) as studied by Mitzenmacher, Prabhakar and Shah (2002): At each round we only take one bin sample, but we also have access to a cache in which the most recently used bin is stored. We place the ball into the least loaded of the two.</li>
- <li> The Packing process: At each round we only take one bin sample. If the load is below some threshold (e.g., the average load), then we place as many balls until the threshold is reached; otherwise, we place only one ball.</li>
- <li> The Twinning process: At each round, we only take one bin sample. If the load is below some threshold, then we place two balls; otherwise, we place only one ball.</li>
- <li> The Thinning process as recently studied by Feldheim and Gurel-Gurevich (2021): At each round, we first take one bin sample. If its load is below some threshold, we place one ball; otherwise, we place one ball into a second bin sample.</li>
-</ul>
+First, we improve and tighten various bounds on the stationary} cover time when $k$ random walks start from vertices sampled from the stationary distribution. For example, we prove an unconditional lower bound of $\Omega( (n/k)  \log n  )$ on the stationary cover time, holding for any graph $G$ and any $1 \leq k =o(n\log n )$. Secondly, we establish the stationary cover times of multiple walks on several fundamental networks up to constant factors. Thirdly, we present a framework characterising worst-case cover times in terms of stationary cover times and a novel, relaxed notion of mixing time for multiple walks called  partial mixing time. Roughly speaking, the partial mixing time only requires a specific portion of all random walks to be mixed. Using these new concepts, we can establish (or recover) the worst-case cover times for many networks including expanders, preferential attachment graphs, grids, binary trees and hypercubes. 
 
-As we demonstrate, our general framework implies for all these processes a gap of $\Oh(\log n)$ between the maximum load and average load, even when an arbitrary number of balls $m \geq n$ are allocated (heavily loaded case). Our analysis is inspired by a previous work of Peres, Talwar and Wieder (2010) for the $(1+\beta)$-process, however here we rely on the interplay between different potential functions to prove stabilization.
-	      
 	      
       <br>
       </font> </a></small></blockquote>
