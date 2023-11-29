@@ -33,7 +33,7 @@ h2 {
 }
 
 a {
-    color: #0083e8; 
+    color: #0083e8;
 }
 
 b, strong {
@@ -97,8 +97,4 @@ text-align:center;
 padding:4px;
 text-decoration:none;
 text-transform:uppercase;
-}
-a:hover,a:active
-{
-background-color:#0099FF;
 }
