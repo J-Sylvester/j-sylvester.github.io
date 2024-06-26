@@ -33,8 +33,6 @@
       font-size: 2em;
     }
 
-
-
     main {
       padding: 20px;
     }
@@ -89,7 +87,6 @@
     .organized-by div {
       text-align: center;
       padding-bottom: 40px;
-
     }
 
     .organized-by img {
@@ -102,6 +99,25 @@
 
     .organized-by p {
       margin: 10px 0 0;
+    }
+
+    .speakers {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+
+    .speaker {
+      flex: 0 1 calc(33.33% - 40px); /* 3 speakers per row, accounting for margins */
+      margin: 20px;
+      text-align: center;
+    }
+
+    .speaker img {
+      height: 185px;
+      width: 150px;
+      object-fit: cover;
+      border-radius: 10%; /* Rounded borders */
     }
 
     @media (max-width: 768px) {
@@ -117,17 +133,23 @@
         font-size: 1.5em;
       }
 
-      .supported-by, .organized-by {
+      .supported-by, .organized-by, .speakers {
         flex-direction: column;
       }
 
-      .supported-by img, .organized-by img {
-        max-width: 100%;
+      .supported-by img, .organized-by img, .speakers .speaker img {
+        max-width: 150px;
+        margin: 10px 0;
+      }
+
+      .speaker {
+        flex: 0 1 100%; /* Full width on smaller screens */
         margin: 10px 0;
       }
     }
   </style>
 </head>
+
 <body>
   <header>
     <h1>Liverpool Discrete Mathematics Colloquium</h1>
@@ -145,35 +167,42 @@
         For the benefit of junior researchers, there is a tutorial given by <a class="simple" href="https://www.maksimzhukovskii.com/" target="_blank">Maksim Zhukovskii</a>, and a session with contributed one slide pitches by junior researchers.
       </p>
       <p>
-      The Colloquium will be hosted at the University of Liverpool, which is a 15 minute walk from the Liverpool main train station.
+        The Colloquium will be hosted at the University of Liverpool, which is a 15 minute walk from the Liverpool main train station.
       </p>
     </section>
     <section>
       <h2>Speakers (confirmed so far)</h2>
-      <div class="organized-by">
+      <div class="speakers">
 
-        <div>
+        <div class="speaker">
           <a href="https://nb453.user.srcf.net/">
             <img src="https://nb453.user.srcf.net/wp-content/uploads/2024/06/me-768x1023.jpeg" alt="Natalie Behague (Warwick)">
           </a>
           <p>Natalie Behague (Warwick)</p>
         </div>
 
-        <div>
+        <div class="speaker">
           <a href="https://www.qmul.ac.uk/maths/profiles/blitvicn.html">
             <img src="https://www.research.lancs.ac.uk/portal/files/356417878/7DF97462_BCA2_4932_8A15_4D90A408F466.jpeg" alt="Natasha Blitvic (Queen Mary)">
           </a>
           <p>Natasha Blitvic (Queen Mary)</p>
         </div>
 
-        <div>
+        <div class="speaker">
           <a href="https://j-haslegrave.github.io/">
             <img src="JohnH.jpg" alt="John Haslegrave (Lancaster)">
           </a>
           <p>John Haslegrave (Lancaster)</p>
         </div>
 
-        <div>
+        <div class="speaker">
+          <a href="https://warwick.ac.uk/fac/sci/maths/people/staff/vadim_lozin/">
+            <img src="LV.jpg" alt="Vadim Lozin (Warwick)">
+          </a>
+          <p>Vadim Lozin (Warwick)</p>
+        </div>
+
+        <div class="speaker">
           <a href="https://www.maksimzhukovskii.com/">
             <img src="https://cdn.sheffield.ac.uk/sites/default/files/styles/profile_modal/public/2022-12/MZ_head.png?h=36dc95ab&itok=jfvfKxyH" alt="Maksim Zhukovskii (Sheffield)">
           </a>
