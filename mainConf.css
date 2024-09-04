@@ -1,0 +1,22 @@
+/* Components */
+/* ========================================================================== BUTTONS ========================================================================== */
+/* Default button ========================================================================== */
+.btn, #goog-wm-sb { /* default */ display: inline-block; margin-bottom: 0.25em; padding: 0.5em 1em; font-family: -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif; font-size: 0.75em; font-weight: bold; text-align: center; text-decoration: none; border-width: 0; border-radius: 4px; cursor: pointer; /* button colors */ /* fills width of parent container */ /* disabled */ /* extra large button */ /* large button */ /* small button */ }
+
+.btn .icon, #goog-wm-sb .icon { margin-right: 0.5em; }
+
+.btn .icon + .hidden, #goog-wm-sb .icon + .hidden { margin-left: -0.5em; /* override for hidden text*/ }
+
+.btn--primary { background-color: ##5194e0; color: #fff; }
+
+.btn--primary:visited { background-color: ##5194e0; color: #fff; }
+
+.btn--primary:hover { background-color: ##5194e0; color: #fff; }
+
+.btn--success { background-color: #5194e0; color: #fff; }
+
+.btn--success:visited { background-color: #5194e0; color: #fff; }
+
+.btn--success:hover { background-color: #5194e0; color: #fff; }
+
+.btn--large { font-size: 1em; }
