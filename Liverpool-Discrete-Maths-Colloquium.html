@@ -84,7 +84,8 @@ MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
     }
 
     .supported-by img {
-      max-width: 300px;
+      max-width: 270px;
+      max-height: 120px;
       margin: 0 20px;
     }
 
@@ -304,7 +305,7 @@ MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
           </tr>
           <tr>
             <td>14:00 - 14:45</td>
-            <td>Talk 1: Sandra Kiefer </td>
+            <td>Talk 1: Sandra Kiefer -<i> Combinatorial Approaches to the Graph isomorphism Problem</i></td>
           </tr>
           <tr>
             <td>14:45 - 15:30</td>
@@ -390,6 +391,20 @@ MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
 
 <p> Nearly 40 years ago, Bollobás and Thomason demonstrated that every non-trivial monotone property of subsets has a threshold probability. Since then, various techniques have been developed to determine the exact threshold values for monotone properties in random graphs. The recently resolved Kahn-Kalai conjecture asserts that, up to a logarithmic factor, thresholds can be easily estimated by calculating the expectation. In this tutorial, we will discuss several techniques for finding thresholds, with a particular focus on the key components of the proof of the Kahn-Kalai conjecture.</p>
 
+<h3>Sandra Kiefer -<i> Combinatorial Approaches to the Graph isomorphism Problem</i></h3>
+
+<p>The graph isomorphism problem is one of the most fundamental computational problems whose complexity is still open. All competitive approaches to it make use of the Weisfeiler—Leman algorithm, which works by computing, counting, and comparing colour occurrences in the graphs. </p>
+
+<p>The algorithm has links to numerous other areas. For example, via its connection to logics and games, we can draw conclusions about the descriptive complexity of the input graph and we can find canonical decompositions of the structures at hand. Still, after decades of research and with all the cross-links that have been found, we lack a precise understanding of the expressiveness of the algorithm. </p>
+
+<p>In my talk, I will shed light on the power of the algorithm to detect graph structure. I will analyse its central parameters, the dimension and the number of iterations, in the context of logics and games and illustrate how this connection yields new proof techniques.</p>
+
+
+
+<h3>Laura Larios-Jones -<i> Structural Parameters for Dense Temporal Graphs</i></h3>
+
+<p>A temporal graph consists of a static graph $G$ and a function that dictates when the edges are active. This allows us to model networks where the time at which connections occur is important. Unfortunately, many temporal problems are more computationally complex than their static counterparts. We look for temporal parameters such that, when these are small for the input of a temporal problem, we can efficiently solve the problem at hand. Many temporal parameters currently in use rely on some notion of sparsity in either the graph or function. We introduce three parameters that are small for dense and highly structured temporal graphs. These parameters are temporal cliquewidth, temporal modular-width, and temporal neighbourhood diversity. We also give examples of temporal problems which are tractable with respect to these parameters.</p>
+
 
 <h3>Vadim Lozin -<i> Graph problems and monotone classes</i></h3>
 
@@ -405,11 +420,6 @@ boundary classes. Together with minimal classes they play a critical role for
 classes defined by finitely many forbidden subgraphs. In this talk,
 we identify several levels in the hierarchy of monotone classes and describe
 respective critical classes. </p>
-
-
-<h3>Laura Larios-Jones -<i> Structural Parameters for Dense Temporal Graphs</i></h3>
-
-<p>A temporal graph consists of a static graph $G$ and a function that dictates when the edges are active. This allows us to model networks where the time at which connections occur is important. Unfortunately, many temporal problems are more computationally complex than their static counterparts. We look for temporal parameters such that, when these are small for the input of a temporal problem, we can efficiently solve the problem at hand. Many temporal parameters currently in use rely on some notion of sparsity in either the graph or function. We introduce three parameters that are small for dense and highly structured temporal graphs. These parameters are temporal cliquewidth, temporal modular-width, and temporal neighbourhood diversity. We also give examples of temporal problems which are tractable with respect to these parameters.</p>
 
 <h3>Natalie Behague -<i> Ramsey multiplicity and Common pairs of graphs</i></h3>
 
@@ -459,6 +469,7 @@ respective critical classes. </p>
       <h2>Supported by</h2>
       <div class="supported-by">
         <a href="https://www.lms.ac.uk/"><img src="lms.jpg" alt="The London Mathematical Society"></a>
+      <a href="https://www.britishcombinatorics.org.uk/"><img src="BCClogo.jpg" alt="The British Combinatorial Committee"></a>
         <a href="https://www.liverpool.ac.uk/computer-science/"><img src="liverpool.jpg" alt="University of Liverpool"></a>
       </div>
     </section>
