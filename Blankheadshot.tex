@@ -1,0 +1,14 @@
+\documentclass[tikz]{standalone}
+\usepackage{tikz}
+
+\begin{document}
+	\begin{tikzpicture}
+		% Head (circle)
+		\fill[white] (0,2.5) circle (.005);
+		\fill[black!50] (0,1) circle (1);
+		
+		% Shoulders (upward-facing semi-circle)
+		\path[fill=black!50]
+		(-2,-2) arc[start angle=180, end angle=0, radius=2] -- (2,-2) -- (-2,-2);
+	\end{tikzpicture}
+\end{document}
