@@ -356,7 +356,7 @@ MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
           </tr>
           <tr>
             <td>10:30 - 12:30</td>
-            <td>First Tutorial: Andrei Krokhin - <i>Constraint Satisfaction Problems</i>
+            <td>First Tutorial: Andrei Krokhin - <i> Introduction to the theory of constraint satisfaction</i>
           </tr>
           <tr>
             <td>12:30 - 14:00</td>
@@ -399,7 +399,7 @@ MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
           </tr>
           <tr>
             <td>9:30 - 11:30</td>
-            <td>Second Tutorial: Andrei Krokhin - <i>Constraint Satisfaction Problems</i>
+            <td>Second Tutorial: Andrei Krokhin - <i> Introduction to the theory of constraint satisfaction </i>
           </tr>
           <tr>
             <td>11:30 - 11:45</td>
@@ -407,7 +407,7 @@ MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
           </tr>
           <tr>
             <td>11:45 - 12:30</td>
-            <td>Talk 5: Maximilien Gadouleau
+            <td>Talk 5: Maximilien Gadouleau -<i> Maximal Independent Sets and Boolean Networks </i>
           </tr>
           <tr>
             <td>12:30 - 14:00</td>
@@ -415,11 +415,11 @@ MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
           </tr>
           <tr>
             <td>14:00 - 14:45</td>
-            <td>Talk 6: Sebastian Ordyniak
+            <td>Talk 6: Sebastian Ordyniak -<i> Almost Consistent Systems of Linear Equations</i>
           </tr>
           <tr>
             <td>14:45 - 15:30</td>
-            <td>Talk 7: Jakub Opršal
+            <td>Talk 7: Jakub Opršal -<i> Homotopy theory of complexity of constraints</i>
           </tr>
           <tr>
             <td>15:30 - 16:00</td>
@@ -442,10 +442,39 @@ MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
     </section>
 
     <br>
-        <section>
-      <h2>Abstracts</h2>
 
-<h3>TBC</h3>
+
+
+        <section>
+      <h2>Talk Abstracts</h2>
+
+
+        <h3>Maximilien Gadouleau -<i> Maximal Independent Sets and Boolean Networks </i></h3>
+
+        <p> A simple greedy algorithm to find a maximal independent set (MIS) in a graph starts with the empty set and visits every vertex, adding it to the set if and only if none of its neighbours are already in the set. In this talk, we consider (the complexity of decision problems related to) the generalisation of this MIS algorithm wherein any starting set is allowed. Two main approaches are leveraged. Firstly, we view the MIS algorithm as a sequential update of a Boolean network according to a permutation of the vertex set. Secondly, we introduce the concept of a constituency of a graph: a set of vertices that is dominated by an independent set. Recognizing a constituency is NP-complete, a fact we leverage repeatedly in our investigation.
+We will show that fixing words (which reach a MIS from any starting configuration) and fixing permutations (briefly, permises) are coNP-complete to recognize; and that permissible graphs (graphs with a permis) are coNP-hard to recognize. If time permits, we shall give an overview of related results in that area, and close with some open problems.
+  </p>
+
+
+
+        <h3>Andrei Krokhin -<i> Introduction to the theory of constraint satisfaction </i></h3>
+
+        <p> I will explain what constraint satisfaction problems (CSPs) are and why they are studied so much in Theoretical Computer Science. I will also present the basics of the mathematical theory of CSPs that has been very successful in classifying the computational complexity of CSPs.
+      </p>
+
+
+<h3>Jakub Opršal -<i> Homotopy theory of complexity of constraints</i></h3>
+
+<p>  TBC
+</p>
+
+      <h3>Sebastian Ordyniak -<i> Almost Consistent Systems of Linear Equations</i></h3>
+
+      <p>  Checking whether a system of linear equations is consistent is a basic computational problem with ubiquitous applications. When dealing with inconsistent systems, one may seek an assignment that minimizes the number of unsatisfied equations. This problem is NP-hard and UGC-hard to approximate within any constant even for two-variable equations over the two-element field. We study this problem from the point of view of parameterized complexity, with the parameter being the number of unsatisfied equations.  We consider equations defined over Euclidean domains---a family of commutative rings that generalize finite and infinite fields including the rationals, the ring of integers and many other structures. We show that if every equation contains at most two variables, the problem is fixed-parameter tractable. This generalizes many eminent graph separation problems such as Bipartization, Multiway Cut and Multicut parameterized by the size of the cutset.  To complement this, we show that the problem is W[1]-hard when three or more variables are allowed in an equation, as well as for many commutative rings that are not Euclidean domains. On the technical side, we introduce the notion of important balanced subgraphs,  generalizing important separators of Marx [Theor. Comput. Sci. 2006] to the setting of biased graphs. Furthermore, we use recent results on parameterized MinCSP [Kim et al., SODA 2021] to efficiently solve a generalization of Multicut with disjunctive cut requests.
+ </p>
+
+
+
 
     </section>
 
