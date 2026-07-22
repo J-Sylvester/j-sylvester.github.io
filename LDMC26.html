@@ -1,0 +1,871 @@
+---
+layout: null
+permalink: /events/LDMC/2026/
+---
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Liverpool Discrete Mathematics Colloquium 2026">
+  <meta name="keywords" content="LDMC, discrete mathematics, colloquium, conference, liverpool, combinatorics, graph theory, algorithms">
+  <title>Liverpool Discrete Mathematics Colloquium 2026</title>
+  <link rel="icon" type="image/png" href="assets/favicon-handwritten-ldmc-liverpool-discrete.png">
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      color: #3d4144;
+      font-family: -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif;
+      line-height: 1.5;
+    }
+
+    header {
+      position: relative;
+      display: block;
+      color: white;
+      text-align: center;
+      text-shadow: 0 2px 10px rgba(0, 0, 0, 0.65);
+      overflow: hidden;
+    }
+
+    .hero-image {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+
+    header::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to bottom, rgba(0, 0, 0, 0.14), rgba(0, 0, 0, 0.28) 50%, rgba(0, 0, 0, 0.18));
+    }
+
+    .hero-text {
+      position: absolute;
+      inset: 0;
+      z-index: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+      max-width: none;
+    }
+
+    h1 {
+      margin-top: 0;
+      font-size: 3em;
+    }
+
+    h2.subheader {
+      margin: 0;
+      font-weight: normal;
+      font-size: 2em;
+    }
+
+    main {
+      padding: 20px;
+    }
+
+    section {
+      margin-bottom: 54px;
+      padding: 26px 24px 10px;
+      border-top: 2px solid #e7ddd2;
+      border-radius: 22px;
+      background: linear-gradient(180deg, rgba(252, 249, 244, 0.92), rgba(255, 255, 255, 0.96));
+      box-shadow: 0 8px 24px rgba(80, 62, 34, 0.05);
+    }
+
+    h2 {
+      margin-top: 0;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    th,
+    td {
+      padding: 10px;
+      text-align: left;
+      border-bottom: 1px solid #ddd;
+      vertical-align: top;
+    }
+
+    th {
+      background-color: #f0f0f0;
+    }
+
+    .container {
+      max-width: 1180px;
+      margin: 0 auto;
+    }
+
+    section:nth-of-type(even) {
+      background: linear-gradient(180deg, rgba(248, 251, 252, 0.92), rgba(255, 255, 255, 0.98));
+      border-top-color: #d9e4ea;
+    }
+
+    .supported-by {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .supported-by img {
+      max-width: 230px;
+      max-height: 120px;
+      display: block;
+      margin: 0 20px;
+    }
+
+    .organized-by {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .organized-by div {
+      text-align: center;
+      padding-bottom: 40px;
+    }
+
+    .speakers {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+
+    .speaker,
+    .organized-by div {
+      flex: 0 1 calc(33.33% - 40px);
+      text-align: center;
+      margin: 20px;
+    }
+
+    .speaker img,
+    .organized-by img {
+      height: 185px;
+      width: 150px;
+      object-fit: cover;
+      border-radius: 10%;
+      display: block;
+      margin: 0 auto;
+    }
+
+    .speaker p,
+    .organized-by p {
+      margin: 10px 0 0;
+    }
+
+    .speaker-duo {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 10px;
+    }
+
+    .speaker-duo-profile {
+      width: 150px;
+      text-align: center;
+    }
+
+    .speaker-duo img {
+      height: 185px;
+      width: 150px;
+      object-fit: cover;
+      border-radius: 10%;
+      display: block;
+    }
+
+    .speaker-duo-name {
+      display: block;
+      margin-top: 10px;
+    }
+
+    .simple-button {
+      display: inline-block;
+      padding: 12px 18px;
+      background: #2b7de9;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: 600;
+    }
+
+    .simple-button:hover {
+      background: #1f65bf;
+      color: #fff;
+    }
+
+    .speaker-profile-link {
+      display: inline-block;
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .speaker-profile-link:hover .speaker-duo-name,
+    .speaker-profile-link:hover img,
+    .speaker p a:hover,
+    .timeline-item a:hover,
+    .abstract-group h3 a:hover {
+      text-decoration: underline;
+    }
+
+    .speaker p a,
+    .timeline-item a,
+    .abstract-group h3 a {
+      color: inherit;
+    }
+
+    .schedule-grid {
+      --slot-height: 28px;
+      --time-width: 82px;
+      display: grid;
+      grid-template-columns: var(--time-width) repeat(2, minmax(0, 1fr));
+      gap: 28px 20px;
+      align-items: start;
+    }
+
+    .schedule-card {
+      display: flex;
+      flex-direction: column;
+      border: 1px solid #ddd;
+      border-radius: 14px;
+      padding: 18px 18px 8px;
+      background: #fff;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.04);
+    }
+
+    .schedule-head {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      margin-bottom: 14px;
+      min-height: 96px;
+    }
+
+    .schedule-icon {
+      width: 78px;
+      height: 78px;
+      object-fit: contain;
+      flex: 0 0 auto;
+    }
+
+    .schedule-head h3 {
+      margin: 0 0 2px;
+      font-size: 1.15em;
+    }
+
+    .schedule-head p {
+      margin: 0;
+      color: #5d6164;
+      font-size: 0.95em;
+    }
+
+    .timeline-axis {
+      position: relative;
+      height: calc(40 * var(--slot-height));
+      margin-top: 114px;
+    }
+
+    .time-label {
+      position: absolute;
+      left: 0;
+      width: 100%;
+      transform: translateY(-50%);
+      color: #687078;
+      font-size: 0.92em;
+      font-weight: 600;
+    }
+
+    .time-label::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      right: -14px;
+      width: 10px;
+      border-top: 1px solid #ccd3da;
+    }
+
+    .day-track {
+      position: relative;
+      height: calc(40 * var(--slot-height));
+      border-radius: 12px;
+      background:
+        repeating-linear-gradient(
+          to bottom,
+          #f8fafb 0,
+          #f8fafb calc(var(--slot-height) - 1px),
+          #e7ecef calc(var(--slot-height) - 1px),
+          #e7ecef var(--slot-height)
+        );
+      overflow: hidden;
+    }
+
+    .timeline-item {
+      box-sizing: border-box;
+      position: absolute;
+      left: 10px;
+      right: 10px;
+      top: calc(var(--start) * var(--slot-height));
+      height: calc(var(--span) * var(--slot-height));
+      padding: 8px 12px;
+      border-radius: 10px;
+      border-left: 4px solid #cfd6de;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .timeline-item strong {
+      display: block;
+      margin-bottom: 1px;
+      font-size: 0.82em;
+      line-height: 1.15;
+    }
+
+    .timeline-item span {
+      display: block;
+      font-size: 0.86em;
+      line-height: 1.2;
+    }
+
+    .timeline-item.type-break span,
+    .timeline-item.type-admin span {
+      font-size: 0.84em;
+    }
+
+    .timeline-item.compact {
+      padding-top: 5px;
+      padding-bottom: 5px;
+    }
+
+    .timeline-item.compact strong {
+      font-size: 0.76em;
+      line-height: 1.1;
+    }
+
+    .timeline-item.compact span {
+      font-size: 0.8em;
+      line-height: 1.1;
+    }
+
+    .abstract-group {
+      margin-top: 24px;
+      padding-top: 10px;
+      border-top: 2px solid #e6eaee;
+    }
+
+    .abstract-group h3.group-title {
+      margin: 0 0 14px;
+      font-size: 1.05em;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: #616870;
+    }
+
+    .timeline-item.type-tutorial,
+    .timeline-item.type-talk {
+      background: #f4f8ff;
+      border-left-color: #8fb3e8;
+    }
+
+    .timeline-item.type-break {
+      background: #f7fbf7;
+      border-left-color: #b8d6bf;
+    }
+
+    .timeline-item.type-social {
+      background: #fff7ee;
+      border-left-color: #e6c28b;
+    }
+
+    .timeline-item.type-admin {
+      background: #f7fbf7;
+      border-left-color: #b8d6bf;
+    }
+
+    .timeline-item.type-discussion {
+      background: #f8f5fc;
+      border-left-color: #ccb7e8;
+    }
+
+    @media (max-width: 768px) {
+      header {
+        min-height: auto;
+        color: white;
+        text-shadow: 0 2px 9px rgba(0, 0, 0, 0.72);
+      }
+
+      header::before {
+        display: block;
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0.18), rgba(0, 0, 0, 0.36) 50%, rgba(0, 0, 0, 0.2));
+      }
+
+      .hero-text {
+        position: absolute;
+        padding: 10px 14px;
+      }
+
+      h1 {
+        margin-bottom: 5px;
+        font-size: clamp(1.05em, 5.2vw, 1.55em);
+        line-height: 1.03;
+      }
+
+      h2.subheader {
+        font-size: clamp(0.78em, 3.6vw, 1.05em);
+        line-height: 1.15;
+      }
+
+      .speakers,
+      .organized-by,
+      .supported-by {
+        flex-direction: column;
+        gap: 20px;
+      }
+
+      section {
+        padding: 18px 16px 8px;
+        margin-bottom: 32px;
+        border-radius: 16px;
+      }
+
+      .schedule-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .timeline-axis {
+        display: none;
+      }
+
+      .day-track {
+        height: auto;
+        background: none;
+        overflow: visible;
+      }
+
+      .timeline-item {
+        position: static;
+        height: auto;
+        margin-bottom: 10px;
+        padding: 10px 12px;
+      }
+
+      .timeline-item strong {
+        display: block;
+        margin-bottom: 3px;
+        font-size: 0.92em;
+      }
+
+      .timeline-item span {
+        font-size: 0.92em;
+        line-height: 1.35;
+      }
+
+      .supported-by img,
+      .organized-by img,
+      .speakers .speaker img {
+        max-width: 150px;
+        margin: 10px 0;
+      }
+
+      .speaker-duo {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .speaker-duo img {
+        margin: 0 auto;
+      }
+
+      .speaker {
+        flex: 0 1 100%;
+        margin: 10px 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <picture>
+      <source media="(max-width: 768px)" srcset="assets/liverpool-sky-handdrawn-positive-mobile.jpg">
+      <img class="hero-image" src="assets/liverpool-sky-handdrawn-positive.png" alt="Hand-drawn Liverpool skyline" fetchpriority="high">
+    </picture>
+    <div class="hero-text">
+      <h1>Liverpool Discrete Mathematics Colloquium</h1>
+      <h2 class="subheader">8<sup>th</sup>-9<sup>th</sup> September 2026</h2>
+      <h2 class="subheader">University of Liverpool</h2>
+    </div>
+  </header>
+
+  <main class="container">
+    <section>
+      <h2>About</h2>
+      <p>
+        This is the third edition of the Liverpool Discrete Mathematics Colloquium, an annual two-day event designed to
+        strengthen links between Computer Science and Mathematics and to expose PhD students to current research topics.
+      </p>
+      <p>
+        The 2026 meeting has a focused format around mathematically rigorous analysis of black-box AI algorithms. The
+        first day is devoted to <b>Logics and Graph Neural Networks</b>, while the second day focuses on
+        <b>Stochastic Gradient Descent</b>. Each day will feature a 2 hour tutorial together with invited talks and
+        time for discussion and networking.
+      </p>
+      <h3>Venue</h3>
+      <p>
+        TBC
+      </p>
+
+      <h3>Catering</h3>
+      <p>
+        There are tea/coffee breaks provided. Lunches are not provided, however there is the University of Liverpool
+        refectory and plenty of <a class="simple" href="https://j-sylvester.github.io/FoodPlaces.html" target="_blank" rel="noopener noreferrer">local cafes and restaurants nearby</a>.
+      </p>
+      <p>
+        There will be a conference dinner on the evening of the first day. All participants are welcome to attend,
+        however non-speaking participants will have to cover the cost of their own meal. Details will be provided
+        closer to the event.
+      </p>
+
+      <h3>Funding for Students</h3>
+      <p>
+        We urge all students to keep receipts for expenses as we may be able to refund some expenses after the conference.
+      </p>
+    </section>
+
+    <section>
+      <h2>Registration</h2>
+      <p>
+        Attendance at the Liverpool Discrete Mathematics Colloquium is expected to be free of charge. Registration
+        will be required for planning purposes, and the form and deadline will be added here once available.
+      </p>
+      <p>
+        <a href="https://forms.gle/ZgsuxUoVXMPCkwDUA" class="simple-button" target="_blank" rel="noopener noreferrer">Register now</a>
+      </p>
+    </section>
+
+    <section>
+      <h2>Tutorial Speakers</h2>
+      <div class="speakers">
+        <div class="speaker">
+          <div class="speaker-duo">
+            <div class="speaker-duo-profile">
+              <a class="speaker-profile-link" href="https://www.cs.ox.ac.uk/michael.benedikt/home.html" target="_blank" rel="noopener noreferrer">
+                <picture>
+                  <source media="(max-width: 768px)" srcset="assets/michael-benedikt-mobile.jpg">
+                  <img src="assets/michael-benedikt.jpg" alt="Michael Benedikt" width="150" height="185" loading="lazy" decoding="async">
+                </picture>
+                <span class="speaker-duo-name">Michael Benedikt</span>
+              </a>
+            </div>
+            <div class="speaker-duo-profile">
+              <a class="speaker-profile-link" href="https://ptonytan.github.io/" target="_blank" rel="noopener noreferrer">
+                <img src="assets/placeholder-male-silhouette.png" alt="Tony Tan">
+                <span class="speaker-duo-name">Tony Tan</span>
+              </a>
+            </div>
+          </div>
+          <p>Logical Aspects of Graph Neural Networks</p>
+        </div>
+        <div class="speaker">
+          <a class="speaker-profile-link" href="https://www.uni-muenster.de/Stochastik/dereich/" target="_blank" rel="noopener noreferrer">
+            <picture>
+              <source media="(max-width: 768px)" srcset="assets/steffen-dereich-mobile.jpg">
+              <img src="assets/steffen-dereich.jpeg" alt="Steffen Dereich" width="150" height="185" loading="lazy" decoding="async">
+            </picture>
+          </a>
+          <p><a href="https://www.uni-muenster.de/Stochastik/dereich/" target="_blank" rel="noopener noreferrer">Steffen Dereich</a> <br> Convergence of Stochastic Gradient Descent</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Speakers</h2>
+      <div class="speakers">
+        <div class="speaker">
+          <a class="speaker-profile-link" href="https://home.uni-leipzig.de/clu/" target="_blank" rel="noopener noreferrer">
+            <img src="assets/CL.jpg" alt="Carsten Lutz">
+          </a>
+          <p><a href="https://home.uni-leipzig.de/clu/" target="_blank" rel="noopener noreferrer">Carsten Lutz</a> <br> Leipzig</p>
+        </div>
+
+        <div class="speaker">
+          <a class="speaker-profile-link" href="https://www.cs.ox.ac.uk/people/emily.jin/" target="_blank" rel="noopener noreferrer">
+            <img src="assets/Emily_Jin_Photo.jpeg" alt="Emily Jin">
+          </a>
+          <p><a href="https://www.cs.ox.ac.uk/people/emily.jin/" target="_blank" rel="noopener noreferrer">Emily Jin</a> <br> Oxford</p>
+        </div>
+
+        <div class="speaker">
+          <a class="speaker-profile-link" href="https://benjidupuis.github.io/" target="_blank" rel="noopener noreferrer">
+            <picture>
+              <source media="(max-width: 768px)" srcset="assets/benjamin-dupuis-mobile.jpg">
+              <img src="assets/benjamin-dupuis.jpg" alt="Benjamin Dupuis" width="150" height="185" loading="lazy" decoding="async">
+            </picture>
+          </a>
+          <p><a href="https://benjidupuis.github.io/" target="_blank" rel="noopener noreferrer">Benjamin Dupuis</a> <br> ENS Paris</p>
+        </div>
+
+        <div class="speaker">
+          <a class="speaker-profile-link" href="https://warwick.ac.uk/fac/sci/statistics/staff/academic-research/mijatovic/" target="_blank" rel="noopener noreferrer">
+            <picture>
+              <source media="(max-width: 768px)" srcset="assets/aleksandar-mijatovic-mobile.jpg">
+              <img src="assets/aleksandar-mijatovic.jpg" alt="Alex Mijatovic" width="150" height="185" loading="lazy" decoding="async">
+            </picture>
+          </a>
+          <p><a href="https://warwick.ac.uk/fac/sci/statistics/staff/academic-research/mijatovic/" target="_blank" rel="noopener noreferrer">Alex Mijatovi&#263;</a> <br> Warwick</p>
+        </div>
+
+        <div class="speaker">
+          <a class="speaker-profile-link" href="https://sites.google.com/view/sarah-sachs/" target="_blank" rel="noopener noreferrer">
+            <picture>
+              <source media="(max-width: 768px)" srcset="assets/Sarah-Sachs-mobile.jpg">
+              <img src="assets/Sarah-Sachs.jpg" alt="Sarah Sachs" width="150" height="185" loading="lazy" decoding="async">
+            </picture>
+          </a>
+          <p><a href="https://sites.google.com/view/sarah-sachs/" target="_blank" rel="noopener noreferrer">Sarah Sachs</a> <br> Bristol</p>
+        </div>
+
+        <div class="speaker">
+          <a class="speaker-profile-link" href="https://www.virtema.fi/" target="_blank" rel="noopener noreferrer">
+            <img src="assets/jonni_pic.jpg" alt="Speaker to be confirmed">
+          </a>
+          <p><a href="https://www.virtema.fi/" target="_blank" rel="noopener noreferrer">Jonni Virtema</a> <br> Glasgow</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Schedule</h2>
+      <div class="schedule-grid">
+        <div class="timeline-axis">
+          <div class="time-label" style="top: calc(0 * var(--slot-height));">09:00</div>
+          <div class="time-label" style="top: calc(4 * var(--slot-height));">10:00</div>
+          <div class="time-label" style="top: calc(8 * var(--slot-height));">11:00</div>
+          <div class="time-label" style="top: calc(12 * var(--slot-height));">12:00</div>
+          <div class="time-label" style="top: calc(16 * var(--slot-height));">13:00</div>
+          <div class="time-label" style="top: calc(20 * var(--slot-height));">14:00</div>
+          <div class="time-label" style="top: calc(24 * var(--slot-height));">15:00</div>
+          <div class="time-label" style="top: calc(28 * var(--slot-height));">16:00</div>
+          <div class="time-label" style="top: calc(32 * var(--slot-height));">17:00</div>
+          <div class="time-label" style="top: calc(36 * var(--slot-height));">18:00</div>
+          <div class="time-label" style="top: calc(40 * var(--slot-height));">19:00</div>
+        </div>
+        <div class="schedule-card">
+          <div class="schedule-head">
+            <img class="schedule-icon" src="assets/day1-logic-gnn.png" alt="Logic and Graph Neural Networks pictogram" loading="lazy" decoding="async">
+            <div>
+              <h3>Logics and Graph Neural Networks</h3>
+              <p>Tuesday 8 September 2026</p>
+            </div>
+          </div>
+          <div class="day-track">
+            <div class="timeline-item type-admin" style="--start: 2; --span: 3;">
+              <strong>09:30 - 10:15</strong>
+              <span>Registration / Coffee</span>
+            </div>
+            <div class="timeline-item compact type-admin" style="--start: 5; --span: 1;">
+              <strong>10:15 - 10:30</strong>
+              <span>Welcome Address</span>
+            </div>
+            <div class="timeline-item type-tutorial" style="--start: 6; --span: 8;">
+              <strong>10:30 - 12:30</strong>
+              <span>Tutorial: <a href="https://www.cs.ox.ac.uk/michael.benedikt/home.html" target="_blank" rel="noopener noreferrer">Michael Benedikt</a> and <a href="https://ptonytan.github.io/" target="_blank" rel="noopener noreferrer">Tony Tan</a> - <i>Logical Aspects of Graph Neural Networks</i></span>
+            </div>
+            <div class="timeline-item type-break" style="--start: 14; --span: 6;">
+              <strong>12:30 - 14:00</strong>
+              <span>Lunch</span>
+            </div>
+            <div class="timeline-item type-talk" style="--start: 20; --span: 3;">
+              <strong>14:00 - 14:45</strong>
+              <span>Talk 1: <a href="https://www.virtema.fi/" target="_blank" rel="noopener noreferrer">Jonni Virtema</a> - <i>Title to be announced</i></span>
+            </div>
+            <div class="timeline-item type-talk" style="--start: 23; --span: 3;">
+              <strong>14:45 - 15:30</strong>
+              <span>Talk 2: <a href="https://home.uni-leipzig.de/clu/" target="_blank" rel="noopener noreferrer">Carsten Lutz</a> - <i>Title to be announced</i></span>
+            </div>
+            <div class="timeline-item type-break" style="--start: 26; --span: 2;">
+              <strong>15:30 - 16:00</strong>
+              <span>Coffee Break</span>
+            </div>
+            <div class="timeline-item type-talk" style="--start: 28; --span: 3;">
+              <strong>16:00 - 16:45</strong>
+              <span>Talk 3: <a href="https://www.cs.ox.ac.uk/people/emily.jin/" target="_blank" rel="noopener noreferrer">Emily Jin</a> - <i>Title to be announced</i></span>
+            </div>
+            <div class="timeline-item type-discussion" style="--start: 31; --span: 3;">
+              <strong>16:45 - 17:30</strong>
+              <span>Discussion / networking session</span>
+            </div>
+            <div class="timeline-item type-social" style="--start: 40; --span: 2;">
+              <strong>19:00</strong>
+              <span>Dinner / social event</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="schedule-card">
+          <div class="schedule-head">
+            <img class="schedule-icon" src="assets/day2-sgd.png" alt="Stochastic Gradient Descent pictogram" loading="lazy" decoding="async">
+            <div>
+              <h3>Stochastic Gradient Descent</h3>
+              <p>Wednesday 9 September 2026</p>
+            </div>
+          </div>
+          <div class="day-track">
+            <div class="timeline-item type-break" style="--start: 2; --span: 3;">
+              <strong>09:30 - 10:15</strong>
+              <span>Registration / Coffee</span>
+            </div>
+            <div class="timeline-item compact type-break" style="--start: 5; --span: 1;">
+              <strong>10:15 - 10:30</strong>
+              <span>Welcome Address</span>
+            </div>
+            <div class="timeline-item type-tutorial" style="--start: 6; --span: 8;">
+              <strong>10:30 - 12:30</strong>
+              <span>Tutorial: <a href="https://www.uni-muenster.de/Stochastik/dereich/" target="_blank" rel="noopener noreferrer">Steffen Dereich</a> - <i>Convergence of Stochastic Gradient Descent</i></span>
+            </div>
+            <div class="timeline-item type-break" style="--start: 14; --span: 6;">
+              <strong>12:30 - 14:00</strong>
+              <span>Lunch</span>
+            </div>
+            <div class="timeline-item type-talk" style="--start: 20; --span: 3;">
+              <strong>14:00 - 14:45</strong>
+              <span>Talk 1: <a href="https://benjidupuis.github.io/" target="_blank" rel="noopener noreferrer">Benjamin Dupuis</a> - <i>Title to be announced</i></span>
+            </div>
+            <div class="timeline-item type-talk" style="--start: 23; --span: 3;">
+              <strong>14:45 - 15:30</strong>
+              <span>Talk 2: <a href="https://warwick.ac.uk/fac/sci/statistics/staff/academic-research/mijatovic/" target="_blank" rel="noopener noreferrer">Alex Mijatovi&#263;</a> - <i>Limit Theorems for Stochastic Gradient Descent with Infinite Variance
+
+</i></span>
+            </div>
+            <div class="timeline-item type-break" style="--start: 26; --span: 2;">
+              <strong>15:30 - 16:00</strong>
+              <span>Coffee Break</span>
+            </div>
+            <div class="timeline-item type-talk" style="--start: 28; --span: 3;">
+              <strong>16:00 - 16:45</strong>
+              <span>Talk 3: <a href="https://sites.google.com/view/sarah-sachs/" target="_blank" rel="noopener noreferrer">Sarah Sachs</a> - <i>Title to be announced</i></span>
+            </div>
+            <div class="timeline-item type-discussion" style="--start: 31; --span: 3;">
+              <strong>16:45 - 17:30</strong>
+              <span>Discussion / networking session</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section>
+      <h2>Talk Abstracts</h2>
+      <div class="abstract-group">
+        <h3 class="group-title">Tutorials</h3>
+
+        <h3><a href="https://www.cs.ox.ac.uk/michael.benedikt/home.html" target="_blank" rel="noopener noreferrer">Michael Benedikt</a> and <a href="https://ptonytan.github.io/" target="_blank" rel="noopener noreferrer">Tony Tan</a></h3>
+        <p>Abstract to be added.</p>
+
+        <h3><a href="https://www.uni-muenster.de/Stochastik/dereich/" target="_blank" rel="noopener noreferrer">Steffen Dereich</a></h3>
+        <p>Abstract to be added.</p>
+      </div>
+
+      <div class="abstract-group">
+        <h3 class="group-title">Invited Talks</h3>
+
+        <h3><a href="https://www.virtema.fi/" target="_blank" rel="noopener noreferrer">Jonni Virtema</a></h3>
+        <p>Abstract to be added.</p>
+
+        <h3><a href="https://home.uni-leipzig.de/clu/" target="_blank" rel="noopener noreferrer">Carsten Lutz</a></h3>
+        <p>Abstract to be added.</p>
+
+        <h3><a href="https://www.cs.ox.ac.uk/people/emily.jin/" target="_blank" rel="noopener noreferrer">Emily Jin</a></h3>
+        <p>Abstract to be added.</p>
+
+        <h3><a href="https://benjidupuis.github.io/" target="_blank" rel="noopener noreferrer">Benjamin Dupuis</a></h3>
+        <p>Abstract to be added.</p>
+
+        <h3><a href="https://warwick.ac.uk/fac/sci/statistics/staff/academic-research/mijatovic/" target="_blank" rel="noopener noreferrer">Alex Mijatovi&#263;</a> - <i>Limit Theorems for Stochastic Gradient Descent with Infinite Variance</i>
+
+</h3>
+        <p>Stochastic gradient descent (SGD) algorithm  is a classical algorithm that gained significant popularity from both empirical and theoretical perspectives. While its probabilistic properties are well-studied when the randomness is assumed to have a finite variance, there is a scarcity of research addressing its theoretical behaviour in the case of infinite variance. In this talk, I will describe the asymptotic behavior of SGD when the stochastic gradient has an infinite variance, specifically assuming the stochastic gradient is regularly varying with index $\alpha\in(1,2)$. The most recent limit theorems in this context were established in the classical paper Karsulina (1969) in the context of one-dimensional stochastic noise belonging to a restrictive class. We extend this result into the multi-dimensional case, covering a more general class of infinite variance distributions. This extension requires entirely different techniques, as the original method does not apply to the multi-dimensional case. Our results indicate that the asymptotic distribution of the stochastic gradient descent algorithm aligns with the  Ornstein-Unlenbeck process driven by an additive process with jumps (instead of a Brownian motion). Additionally, we explore the applications of these results in linear regression and logistic regression models.</p> 
+        <p>This joint work with Jose Blanchet and Wenhao Yang is to appear in the Annals of Applied Probability (2026). </p>
+
+        <h3><a href="https://sites.google.com/view/sarah-sachs/" target="_blank" rel="noopener noreferrer">Sarah Sachs</a></h3>
+        <p>Abstract to be added.</p>
+      </div>
+    </section>
+
+    <section>
+      <h2>Organisers</h2>
+      <div class="organized-by">
+        <div>
+          <a href="https://j-sylvester.github.io/">
+            <picture>
+              <source media="(max-width: 768px)" srcset="assets/Muttley+Me1-mobile.jpg">
+              <img src="assets/Muttley+Me1.jpg" alt="John Sylvester" width="150" height="185" loading="lazy" decoding="async">
+            </picture>
+          </a>
+          <p>John Sylvester</p>
+        </div>
+
+        <div>
+          <a href="http://linglongyuan.weebly.com/">
+            <picture>
+              <source media="(max-width: 768px)" srcset="assets/linglong-mobile.jpg">
+              <img src="assets/linglong.jpg" alt="Linglong Yuan" width="150" height="185" loading="lazy" decoding="async">
+            </picture>
+          </a>
+          <p>Linglong Yuan</p>
+        </div>
+
+        <div>
+          <a href="https://www.victorzamaraev.com/">
+            <picture>
+              <source media="(max-width: 768px)" srcset="assets/viktor-mobile.jpg">
+              <img src="assets/viktor.jpeg" alt="Viktor Zamaraev" width="150" height="185" loading="lazy" decoding="async">
+            </picture>
+          </a>
+          <p>Viktor Zamaraev</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Supported by</h2>
+      <div class="supported-by">
+        <a href="https://heilbronn.ac.uk/" target="_blank" rel="noopener noreferrer">
+          <img src="assets/HIMRlogo.png" alt="Heilbronn Institute for Mathematical Research" loading="lazy" decoding="async">
+        </a>
+        <a href="https://www.appliedprobability.org/" target="_blank" rel="noopener noreferrer">
+          <img src="assets/applied-probability-trust.png" alt="Applied Probability Trust" loading="lazy" decoding="async">
+        </a>
+        <a href="https://www.ukri.org/councils/epsrc/" target="_blank" rel="noopener noreferrer">
+          <img src="assets/EPSRClogo.png" alt="EPSRC" loading="lazy" decoding="async">
+        </a>
+        <a href="https://www.liverpool.ac.uk/" target="_blank" rel="noopener noreferrer">
+          <img src="assets/liverpool.jpg" alt="University of Liverpool" loading="lazy" decoding="async">
+        </a>
+      </div>
+      <p>
+        This event is supported by the Heilbronn Institute for Mathematical Research, Applied Probability Trust, EPSRC,
+        and the University of Liverpool.
+      </p>
+    </section>
+  </main>
+</body>
+
+</html>
