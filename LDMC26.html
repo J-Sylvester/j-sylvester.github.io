@@ -753,7 +753,7 @@
             </div>
             <div class="timeline-item type-talk" style="--start: 28; --span: 3;">
               <strong>16:00 - 16:45</strong>
-              <span>Talk 3: <a href="https://sites.google.com/view/sarah-sachs/" target="_blank" rel="noopener noreferrer">Sarah Sachs</a> - <i>Title to be announced</i></span>
+              <span>Talk 3: <a href="https://sites.google.com/view/sarah-sachs/" target="_blank" rel="noopener noreferrer">Sarah Sachs</a> - <i>Beyond i.i.d. Data: Online Optimization Between Stochastic and Adversarial Regimes</i></span>
             </div>
             <div class="timeline-item type-discussion" style="--start: 31; --span: 3;">
               <strong>16:45 - 17:30</strong>
@@ -802,8 +802,10 @@
         <p>Stochastic gradient descent (SGD) algorithm  is a classical algorithm that gained significant popularity from both empirical and theoretical perspectives. While its probabilistic properties are well-studied when the randomness is assumed to have a finite variance, there is a scarcity of research addressing its theoretical behaviour in the case of infinite variance. In this talk, I will describe the asymptotic behavior of SGD when the stochastic gradient has an infinite variance, specifically assuming the stochastic gradient is regularly varying with index $\alpha\in(1,2)$. The most recent limit theorems in this context were established in the classical paper Karsulina (1969) in the context of one-dimensional stochastic noise belonging to a restrictive class. We extend this result into the multi-dimensional case, covering a more general class of infinite variance distributions. This extension requires entirely different techniques, as the original method does not apply to the multi-dimensional case. Our results indicate that the asymptotic distribution of the stochastic gradient descent algorithm aligns with the  Ornstein-Unlenbeck process driven by an additive process with jumps (instead of a Brownian motion). Additionally, we explore the applications of these results in linear regression and logistic regression models.</p> 
         <p>This joint work with Jose Blanchet and Wenhao Yang is to appear in the Annals of Applied Probability (2026). </p>
 
-        <h3><a href="https://sites.google.com/view/sarah-sachs/" target="_blank" rel="noopener noreferrer">Sarah Sachs</a></h3>
-        <p>Abstract to be added.</p>
+        <h3><a href="https://sites.google.com/view/sarah-sachs/" target="_blank" rel="noopener noreferrer">Sarah Sachs</a> - <i>Beyond i.i.d. Data: Online Optimization Between Stochastic and Adversarial Regimes</i></h3>
+        <p>Many results in optimization and machine learning assume that data are either independent and identically distributed (i.i.d.) or completely adversarial. In practice, however, data often lie somewhere between these two extremes: they may be mostly stochastic, but exhibit temporal variation, distribution shifts, or occasional adversarial corruption. What guarantees are possible in this intermediate regime?</p>
+
+<p>In this talk, I will present regret bounds for online convex optimization that adapt smoothly between stochastic i.i.d. and fully adversarial losses. The key is to exploit the smoothness of the expected loss: rather than depending on a worst-case bound on gradient magnitudes, our guarantees depend on the variance of the stochastic gradients together with a measure of adversarial variation. This phenomenon was previously understood for linear losses; we extend it to general online convex optimization. Our framework also captures departures from the i.i.d. assumption, including a limited number of adversarially corrupted rounds. At the stochastic extreme, the resulting bounds recover rates suggested by stochastic acceleration, while at the adversarial extreme they gracefully reduce to the optimal worst-case regret. Matching lower bounds show that this interpolation is tight across all intermediate regimes. The results provide a quantitative picture of how optimization guarantees degrade as data move away from the idealized i.i.d. setting.</p>
       </div>
     </section>
 
