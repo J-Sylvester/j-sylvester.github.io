@@ -266,11 +266,11 @@
       font-size: 0.95em;
     }
 
-    .timeline-axis {
-      position: relative;
-      height: calc(40 * var(--slot-height));
-      margin-top: 114px;
-    }
+ .timeline-axis {
+  position: relative;
+  height: calc(44 * var(--slot-height));
+  margin-top: 114px;
+}
 
     .time-label {
       position: absolute;
@@ -290,10 +290,9 @@
       width: 10px;
       border-top: 1px solid #ccd3da;
     }
-
     .day-track {
       position: relative;
-      height: calc(40 * var(--slot-height));
+      height: calc(44 * var(--slot-height));
       border-radius: 12px;
       background:
         repeating-linear-gradient(
@@ -705,10 +704,10 @@
               <strong>16:45 - 17:30</strong>
               <span>Discussion / networking session</span>
             </div>
-            <div class="timeline-item type-social" style="--start: 40; --span: 2;">
-              <strong>18:00 - 20:00</strong>
-              <span>Dinner / social event</span>
-            </div>
+           <div class="timeline-item type-social" style="--start: 36; --span: 8;">
+  <strong>18:00 - 20:00</strong>
+  <span>Dinner / social event</span>
+</div>
           </div>
         </div>
 
@@ -759,6 +758,10 @@
               <strong>16:45 - 17:30</strong>
               <span>Discussion / networking session</span>
             </div>
+              <div class="timeline-item type-social" style="--start: 36; --span: 8;">
+  <strong>18:00 - 20:00</strong>
+  <span>Pub trip to the Augustus John</span>
+</div>
           </div>
         </div>
 
@@ -780,8 +783,10 @@
 <p>In the talk we will focus on the results and intuition. We will not cover their detailed proofs.</p>
 <p>This work is done in collaboration with Chia-Hsuan Lu, Boris Motik, Sam Adam-Day, Ismail Ilkan Ceylan, Alberto Larrauri, and Maksim Zhukovskii.</p>
 
-        <h3><a href="https://www.uni-muenster.de/Stochastik/dereich/" target="_blank" rel="noopener noreferrer">Steffen Dereich</a></h3>
-        <p>Abstract to be added.</p>
+        <h3><a href="https://www.uni-muenster.de/Stochastik/dereich/" target="_blank" rel="noopener noreferrer">Steffen Dereich</a> - <i>Convergence of Stochastic Gradient Descent</i></h3>
+        <p>Stochastic gradient descent (SGD) and its variants are the main tools for training artificial neural networks, yet even their local dynamics raise nontrivial mathematical questions. In the first part of this talk, I will recall several basic ideas from stochastic approximation: convergence estimates under contraction and Polyak–Łojasiewicz conditions, the role of the step-size sequence and Ruppert–Polyak averaging leading to central limit theorems. These results illustrate a common analytical strategy based on effective vector fields, Lyapunov estimates, local linearisation and martingale noise.</p>
+
+<p>I will then discuss how these ideas can be developed further for modern optimization algorithms with memory and adaptive scaling, focusing on Adam. By viewing Adam as a delay equation with interacting fast and slow time scales, one obtains an equilibrium-averaged vector field and an associated limiting ODE. This perspective leads to local error estimates and ODE approximations. After introducing an Adam-specific martingale correction, it also yields a central limit theorem for the averaged algorithm. If time permits, I will conclude with a brief look at a new popular training algorithm named Muon and at neural-network optimization landscapes, highlighting some of the challenges posed by current training algorithms.</p>
       </div>
 
       <div class="abstract-group">
